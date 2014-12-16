@@ -1,5 +1,5 @@
 
-"Style
+""" Style
 colorscheme evening
 "colorscheme desert
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
@@ -20,7 +20,7 @@ set laststatus=2 "always show status bar
 syntax on " syntax highlight
 syntax enable " Enable syntax highlighting
 
-" TAB setting
+""" TAB setting
 set tabstop=4 	" a tab is four spaces
 set shiftwidth=4 " number of spaces to use for autoindenting
 set cindent         "c language auto indentation
@@ -30,8 +30,10 @@ set smartindent
 set expandtab	"replace tab with spaces
 set smarttab " insert tabs on the start of a line according to context
 
+set list
+set listchars=tab:\|\  "dispaly Tab as '|'
 
-"search setting
+""" search setting
 set cursorline  " highlight line
 "set cursorcolumn " highlight column
 set showmatch " Cursor shows matching ) and }
@@ -40,7 +42,7 @@ set incsearch	" incremental search
 set ignorecase " ignore case when searching
 set smartcase " ignore case if search pattern is all lowercase,case-sensitive otherwise
 
-"tab page setting
+""" tab page setting
 set tabpagemax=9
 set showtabline=2
 " Key Shortcut
@@ -52,13 +54,13 @@ nmap <C-Tab> :tabnext<cr>
 
 
 
-"file
+""" file
 "filetype off 		" necessary to make ftdetect work on Linux
 filetype on 		" Enable filetype detection
 filetype indent on 	" Enable filetype-specific indenting
 filetype plugin on 	" Enable filetype-specific plugins
 
-" ENCODING SETTINGS
+""" ENCODING SETTINGS
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
@@ -79,7 +81,7 @@ set encoding=big5
 set fileencoding=big5
 endfun
 
-"Auto-completion
+""" Auto-completion
 :inoremap ( ()<ESC>i
 :inoremap ) <c-r>=ClosePair(')')<CR>
 :inoremap { {<CR>}<ESC>O
@@ -96,4 +98,43 @@ function! ClosePair(char)
     endif
 endfunction
 
+""" add space before and after  =,  <,  >, +, -, *, /.
+inoremap = <c-r>=EqualSign('=')<CR>
+inoremap < <c-r>=EqualSign('<')<CR>
+inoremap > <c-r>=EqualSign('>')<CR>
+inoremap + <c-r>=EqualSign('+')<CR>
+inoremap - <c-r>=EqualSign('-')<CR>
+inoremap * <c-r>=EqualSign('*')<CR>
+inoremap / <c-r>=EqualSign('/')<CR>
+inoremap : <c-r>=Swap()<CR>
+inoremap , ,<space>
+"support format: += -+ *= /+
+function! EqualSign(char)
+    if a:char  =~ '='  && getline('.') =~ ".*("
+        return a:char
+    endif
+    let ex1 = getline('.')[col('.') - 3]
+    let ex2 = getline('.')[col('.') - 2]
+    if ex1 =~ "[-=+><>\/\*]"
+        if ex2 !~ "\s"
+            return "\<ESC>i".a:char."\<SPACE>"
+        else
+            return "\<ESC>xa".a:char."\<SPACE>"
+        endif
+    else
+        if ex2 !~ "\s"
+            return "\<SPACE>".a:char."\<SPACE>\<ESC>a"
+        else
+            return a:char."\<SPACE>\<ESC>a"
+        endif
+    endif
+endf 
+"swap, for example:  :) -->  ):
+function! Swap()
+    if getline('.')[col('.') - 1] =~ ")"
+        return "\<ESC>la:"
+    else
+        return ":"
+    endif
+endf
 
