@@ -1,3 +1,4 @@
+"""  ****  vimrc file  ***   
 
 """ Style
 colorscheme evening
