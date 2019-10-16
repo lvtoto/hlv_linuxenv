@@ -10,6 +10,7 @@ fi
 
 # User specific aliases and functions
 alias g="gvim"
+alias gd="gvimdiff"
 
 #synopsys
 export PATH=/eda/synopsys/installer:$PATH
