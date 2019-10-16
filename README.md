@@ -1,2 +1,1 @@
-vimrc_holv
-==========
+my linux env configuration, including vimrc, bashrc, etc. 
