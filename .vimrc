@@ -103,8 +103,8 @@ endfunction
 inoremap = <c-r>=EqualSign('=')<CR>
 inoremap < <c-r>=EqualSign('<')<CR>
 inoremap > <c-r>=EqualSign('>')<CR>
-inoremap + <c-r>=EqualSign('+')<CR>
-inoremap - <c-r>=EqualSign('-')<CR>
+"inoremap + <c-r>=EqualSign('+')<CR>
+"inoremap - <c-r>=EqualSign('-')<CR>
 inoremap * <c-r>=EqualSign('*')<CR>
 inoremap / <c-r>=EqualSign('/')<CR>
 inoremap : <c-r>=Swap()<CR>
