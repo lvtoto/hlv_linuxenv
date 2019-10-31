@@ -1,0 +1,21 @@
+#vim tmp files
+*.un~
+*.swp
+*.swn
+*.swo
+*.bak
+
+#log
+*.log
+
+#verdi log
+*.rc
+verdiLog
+novas.conf
+.diagnose.oneSearch
+
+#svn
+.svn/
+
+#CVS
+.CVS/
