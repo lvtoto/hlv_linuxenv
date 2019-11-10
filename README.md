@@ -17,3 +17,10 @@ install tmux.
 <br>
 git clone https://github.com/gpakosz/.tmux.git
 <br>
+
+4，auto connect
+<br>
+step#1：get the verilog-mode.el file from the http://www.verilog.com/verilog-mode.html site, and put it in your ~/.elisp/ directory.
+<br>
+step#2:download verilog filetype plugin from https://github.com/zhuzhzh/verilog_emacsauto.vim, and put it in your ~/.vim/ftplugin/ directory, creating the directories if necessary. 
+<br>
