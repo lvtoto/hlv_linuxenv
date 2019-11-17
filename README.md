@@ -17,8 +17,6 @@ install tmux.
 <br>
 git clone https://github.com/gpakosz/.tmux.git
 <br>
-
-<br>
 4，.gitconfig & beyondcompare
 <br>
 ~/.gitconfig
