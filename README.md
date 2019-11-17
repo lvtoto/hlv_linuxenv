@@ -17,8 +17,13 @@ install tmux.
 <br>
 git clone https://github.com/gpakosz/.tmux.git
 <br>
-
-4，auto connect
+4，.gitconfig & beyondcompare
+<br>
+~/.gitconfig
+<br>
+beyondcompare:http://www.scootersoftware.com/download.php bcompare-4.3.2.24472.x86_64.rpm; https://blog.csdn.net/qq_26012495/article/details/86514147
+<br>
+5，auto connect
 <br>
 step#1：get the verilog-mode.el file from the http://www.verilog.com/verilog-mode.html site, and put it in your ~/.elisp/ directory.
 <br>
