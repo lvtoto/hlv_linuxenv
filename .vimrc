@@ -12,7 +12,8 @@ set nobackup		"no *~ backup files
 set noswapfile  "donnot set up .swap backup file, 
 "set autoread " auto read when file is changed from outside
 "set clipboard+=unnamed "let Vim share Windows clipboard. seems useless.
-set fileformats=unix,dos,mac " try file format.
+"set fileformats=unix,dos,mac " try file format.
+set fileformats=unix " try file format.
 "set wildchar=<TAB>	" start wild expansion in the command line using <TAB>
 set wildmenu " wild char completion menu
 set showcmd     "show (partial) command in the last line of the screen, this also shows visual selection info 
@@ -36,7 +37,7 @@ set listchars=tab:\|\  "dispaly Tab as '|'
 
 """ search setting
 set cursorline  " highlight line
-"set cursorcolumn " highlight column
+set cursorcolumn " highlight column
 set showmatch " Cursor shows matching ) and }
 set hlsearch	" search highlighting
 set incsearch	" incremental search
@@ -105,8 +106,8 @@ inoremap < <c-r>=EqualSign('<')<CR>
 inoremap > <c-r>=EqualSign('>')<CR>
 "inoremap + <c-r>=EqualSign('+')<CR>
 "inoremap - <c-r>=EqualSign('-')<CR>
-inoremap * <c-r>=EqualSign('*')<CR>
-inoremap / <c-r>=EqualSign('/')<CR>
+"inoremap * <c-r>=EqualSign('*')<CR>
+"inoremap / <c-r>=EqualSign('/')<CR>
 inoremap : <c-r>=Swap()<CR>
 inoremap , ,<space>
 "support format: += -+ *= /+
@@ -139,3 +140,17 @@ function! Swap()
     endif
 endf
 
+
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'andymass/vim-matchup' 
+
+" Initialize plugin system
+call plug#end()
+
+"command:VlogInstGen : generate verilog instance. refer to https://www.vim.org/scripts/script.php?script_id=4151.
+so ~/.vim/plugged/vlog_inst_gen.vim

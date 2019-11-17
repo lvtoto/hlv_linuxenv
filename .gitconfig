@@ -1,0 +1,25 @@
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	trustExitCode = true
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
+    
+
+[user]
+	name = lvtoto
+	email = hlvpku@gmail.com
+
+[alias]
+   st=status
+   co=checkout
+   ci=commit
+   br=branch
+   lg=log
+   last=log -1
+   dt=difftool
+   mt=mergetool
+[push]
+	default = simple
