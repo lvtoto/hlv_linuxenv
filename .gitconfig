@@ -17,9 +17,10 @@
    co=checkout
    ci=commit
    br=branch
-   lg=log
+   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
    last=log -1
    dt=difftool
    mt=mergetool
+   aliases = !git config --get-regexp ^alias\\. | sed -e s/^alias.// -e s/\\ /\\ $(printf \"\\043\")--\\>\\ / | column -t -s $(printf \"\\043\") | sort -k 1
 [push]
 	default = simple
