@@ -148,6 +148,7 @@ endf
 call plug#begin('~/.vim/plugged')
 
 Plug 'andymass/vim-matchup' 
+Plug 'zhuzhzh/verilog_emacsauto.vim', {'for': ['verilog', 'systemverilog'] }
 
 " Initialize plugin system
 call plug#end()
