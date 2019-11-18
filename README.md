@@ -5,6 +5,14 @@ my linux env configuration, including vimrc, bashrc, etc.
 <br>
 .vim目录及vim_syntax_SV-UVM-SC.rar，见有道云笔记。
 <br>
+plug：https://github.com/junegunn/vim-plug
+<br>
+--.vim/plugged/vim-matchup：  https://github.com/andymass/vim-matchup
+<br>
+--.vim/plugged/vlog_inst_gen：https://www.vim.org/scripts/script.php?script_id=4151
+<br>
+--.vim/ftplugin/verilog_emacsauto.vim: http://www.verilog.com/verilog-mode.html,https://github.com/zhuzhzh/verilog_emacsauto.vim
+<br>
 2，zsh
 <br>
 install zsh.
