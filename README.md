@@ -35,5 +35,7 @@ beyondcompare:http://www.scootersoftware.com/download.php bcompare-4.3.2.24472.x
 <br>
 step#1：get the verilog-mode.el file from the http://www.verilog.com/verilog-mode.html site, and put it in your ~/.elisp/ directory.
 <br>
-step#2:download verilog filetype plugin from https://github.com/zhuzhzh/verilog_emacsauto.vim, and put it in your ~/.vim/ftplugin/ directory, creating the directories if necessary. 
+step#2: use https://github.com/zhuzhzh/verilog_emacsauto.vim, see 1，.vim -- .vim/plugged/verilog_emacsauto.vim
+<br>
+or download verilog filetype plugin from https://www.vim.org/scripts/script.php?script_id=1875, and put it in your ~/.vim/ftplugin/ directory, creating the directories if necessary. 
 <br>
