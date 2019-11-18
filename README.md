@@ -9,9 +9,9 @@ plug：https://github.com/junegunn/vim-plug
 <br>
 --.vim/plugged/vim-matchup：  https://github.com/andymass/vim-matchup
 <br>
---.vim/plugged/vlog_inst_gen：https://www.vim.org/scripts/script.php?script_id=4151
-<br>
---.vim/ftplugin/verilog_emacsauto.vim: http://www.verilog.com/verilog-mode.html,https://github.com/zhuzhzh/verilog_emacsauto.vim
+--.vim/plugged/verilog_emacsauto.vim: http://www.verilog.com/verilog-mode.html,https://github.com/zhuzhzh/verilog_emacsauto.vim
+<br><br>
+--.vim/plugged/vlog_inst_gen.vim：https://www.vim.org/scripts/script.php?script_id=4151
 <br>
 2，zsh
 <br>
