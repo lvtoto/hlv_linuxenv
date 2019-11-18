@@ -37,3 +37,16 @@ export FSDB_FUNCTIONS=1
 
 #vivado
 export XILINXD_LICENSE_FILE=/eda/Xilinx/xilinx_lic.lic
+
+#dvt
+export DVT_LICENSE_FILE=/eda/app/dvt/license.dat
+#export DVT_HOME=/eda/app/dvt/dvt-18.1.50
+export DVT_HOME=/eda/app/dvt/dvt-19.1.30
+export DVT_LOG_LOCATION=/dev/null
+#alias  dvt "bsub -Is $tool_home/bin/dvt.sh"
+alias  dvt="$DVT_HOME/bin/dvt.sh"
+
+#smartgit
+export SMARTGIT_HOME=/eda/app/smartgit/19_1_4
+alias  smartgit="$SMARTGIT_HOME/bin/smartgit.sh"
+
