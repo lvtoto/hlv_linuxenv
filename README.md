@@ -26,6 +26,12 @@ install tmux.
 <br>
 git clone https://github.com/gpakosz/.tmux.git
 <br>
+TPM: https://github.com/tmux-plugins/tpm
+<br>
+https://github.com/tmux-plugins/tmux-resurrect 
+<br>
+https://github.com/tmux-plugins/tmux-continuum
+<br>
 4，.gitconfig & beyondcompare
 <br>
 ~/.gitconfig
