@@ -1,6 +1,7 @@
 my linux env configuration, including vimrc, bashrc, etc. 
 
-
+hlv：
+<br>
 1，.vim
 <br>
 .vim目录及vim_syntax_SV-UVM-SC.rar，见有道云笔记。
@@ -39,8 +40,11 @@ step#2: use https://github.com/zhuzhzh/verilog_emacsauto.vim, see 1，.vim -- .v
 <br>
 or download verilog filetype plugin from https://www.vim.org/scripts/script.php?script_id=1875, and put it in your ~/.vim/ftplugin/ directory, creating the directories if necessary. 
 <br>
-6，scripts
+
 <br>
-(1)pymailer.py
+scripts：
+<br>
+1，pymailer.py
+<br>
    send email using qq email.
 <br>
