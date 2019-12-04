@@ -23,3 +23,6 @@ cd -
 #sudo systemctl start  vncserver@:3.service
 #sudo systemctl enable vncserver@:4.service    
 #sudo systemctl start  vncserver@:4.service
+vncconfig -nowin&
+
+
