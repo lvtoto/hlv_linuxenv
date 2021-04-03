@@ -157,3 +157,7 @@ call plug#end()
 
 "command:VlogInstGen : generate verilog instance. refer to https://www.vim.org/scripts/script.php?script_id=4151.
 so ~/.vim/plugged/vlog_inst_gen.vim
+
+let b:match_ignorecase = 1
+let b:match_words='\<begin\>:\<end\>'
+au BufNewFile,BufRead *.if,*.log,*.sv,*.svh,*.vh setf verilog_systemverilog
