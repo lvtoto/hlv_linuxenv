@@ -11,6 +11,9 @@ fi
 # User specific aliases and functions
 alias g="gvim"
 alias gd="gvimdiff"
+alias sc="source ~/.bashrc"
+alias h="history"
+export PS1='[\u@\h \w]$'
 
 #synopsys
 export PATH=/eda/synopsys/installer:$PATH
